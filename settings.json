@@ -46,6 +46,7 @@
                 "guid": "{2dcaf4f2-b17d-4fc9-91cc-34a1cb4c2db9}",
                 "name": "Windows PowerShell (Admin)",
                 "commandline": "gsudo powershell.exe",
+				"icon": "ms-appdata:///local/PowerShell_elevated.png",
                 "hidden": false,
 				"startingDirectory": "C:\\src",
 				"fontFace": "Cascadia Code PL"
