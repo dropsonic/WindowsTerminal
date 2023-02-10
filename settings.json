@@ -31,7 +31,7 @@
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "profiles": 
     {
         "defaults": 
@@ -39,11 +39,29 @@
             "colorScheme": "One Half Dark",
             "font": 
             {
-                "size": 10
+                "face": "MesloLGM NF",
+                "size": 10.0
             }
         },
         "list": 
         [
+            {
+                "elevate": false,
+                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "hidden": false,
+                "name": "PowerShell",
+                "source": "Windows.Terminal.PowershellCore",
+                "startingDirectory": "C:\\src"
+            },
+            {
+                "commandline": "gsudo \"C:\\Program Files\\PowerShell\\7\\pwsh.exe\"",
+                "elevate": false,
+                "guid": "{ba10067c-d830-4a1c-a7b0-7f2b53ce8e01}",
+                "hidden": false,
+                "icon": "C:\\Users\\vpanchenko\\AppData\\Local\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState\\PowerShell_elevated.png",
+                "name": "PowerShell (Elevated)",
+                "startingDirectory": "%USERPROFILE%"
+            },
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -56,8 +74,8 @@
                 "commandline": "gsudo %SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{bf1acf9d-725c-45bc-aa2b-63dc8edfe64a}",
                 "hidden": false,
-                "icon": "C:\\Users\\vpanchenko\\AppData\\Local\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState\\PowerShell_elevated.png",
-                "name": "Windows PowerShell (Admin)",
+                "icon": "C:\\Users\\vpanchenko\\AppData\\Local\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState\\WindowsPowerShell_elevated.png",
+                "name": "Windows PowerShell (Elevated)",
                 "startingDirectory": "%USERPROFILE%"
             },
             {
@@ -65,7 +83,7 @@
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "Command Prompt"
-            },	
+            },
             {
                 "commandline": "%SystemDrive%/QMK_MSYS/shell_connector.cmd",
                 "guid": "{54df131d-8e7b-4164-af8c-5643a3e2f7f1}",
@@ -303,5 +321,6 @@
             "yellow": "#808000"
         }
     ],
-    "theme": "system"
+    "theme": "system",
+    "themes": []
 }
