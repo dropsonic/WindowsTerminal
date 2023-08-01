@@ -32,6 +32,14 @@
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+    "initialCols": 160,
+    "initialRows": 30,
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
     "profiles": 
     {
         "defaults": 
@@ -41,7 +49,9 @@
             {
                 "face": "MesloLGM NF",
                 "size": 10.0
-            }
+            },
+            "historySize": 100000,
+            "useAtlasEngine": true
         },
         "list": 
         [
@@ -58,7 +68,7 @@
                 "elevate": false,
                 "guid": "{ba10067c-d830-4a1c-a7b0-7f2b53ce8e01}",
                 "hidden": false,
-                "icon": "C:\\Users\\vpanchenko\\AppData\\Local\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState\\PowerShell_elevated.png",
+                "icon": "%LOCALAPPDATA%\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState\\PowerShell_elevated.png",
                 "name": "PowerShell (Elevated)",
                 "startingDirectory": "%USERPROFILE%"
             },
@@ -66,7 +76,6 @@
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
-                "historySize": 100000,
                 "name": "Windows PowerShell",
                 "startingDirectory": "C:\\src"
             },
@@ -74,15 +83,18 @@
                 "commandline": "gsudo %SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
                 "guid": "{bf1acf9d-725c-45bc-aa2b-63dc8edfe64a}",
                 "hidden": false,
-                "icon": "C:\\Users\\vpanchenko\\AppData\\Local\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState\\WindowsPowerShell_elevated.png",
+                "icon": "%LOCALAPPDATA%\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState\\WindowsPowerShell_elevated.png",
                 "name": "Windows PowerShell (Elevated)",
                 "startingDirectory": "%USERPROFILE%"
             },
             {
-                "commandline": "%SystemRoot%\\System32\\cmd.exe",
-                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "commandline": "\"C:\\Program Files\\Far Manager\\Far.exe\" \"C:\\src\" %USERPROFILE%",
+                "elevate": false,
+                "guid": "{dee793a3-84ae-4239-b060-f4e66c155c81}",
                 "hidden": false,
-                "name": "Command Prompt"
+                "icon": "%LOCALAPPDATA%\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState\\FarManager.png",
+                "name": "Far Manager",
+                "startingDirectory": "C:\\src"
             },
             {
                 "commandline": "%SystemDrive%/QMK_MSYS/shell_connector.cmd",
@@ -92,19 +104,25 @@
                 "name": "QMK MSYS"
             },
             {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "Command Prompt"
+            },
+            {
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
                 "hidden": true,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "guid": "{b0ce92b3-907f-53d1-bda5-f770b0c90c33}",
+                "guid": "{da7c44cd-248e-56aa-bfda-ccc689e9f055}",
                 "hidden": true,
                 "name": "Developer Command Prompt for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
             },
             {
-                "guid": "{97e68ea3-5ce3-5a42-b9ff-60db2c536d47}",
+                "guid": "{ae110cc5-ae31-599a-89f6-b880f62ce302}",
                 "hidden": true,
                 "name": "Developer PowerShell for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
@@ -298,6 +316,29 @@
             "yellow": "#C4A000"
         },
         {
+            "background": "#300A24",
+            "black": "#171421",
+            "blue": "#0037DA",
+            "brightBlack": "#767676",
+            "brightBlue": "#08458F",
+            "brightCyan": "#2C9FB3",
+            "brightGreen": "#26A269",
+            "brightPurple": "#A347BA",
+            "brightRed": "#C01C28",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#A2734C",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#3A96DD",
+            "foreground": "#FFFFFF",
+            "green": "#26A269",
+            "name": "Ubuntu-ColorScheme",
+            "purple": "#881798",
+            "red": "#C21A23",
+            "selectionBackground": "#FFFFFF",
+            "white": "#CCCCCC",
+            "yellow": "#A2734C"
+        },
+        {
             "background": "#000000",
             "black": "#000000",
             "blue": "#000080",
@@ -322,5 +363,49 @@
         }
     ],
     "theme": "system",
-    "themes": []
+    "themes": 
+    [
+        {
+            "name": "legacyDark",
+            "tab": 
+            {
+                "background": null,
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "window": 
+            {
+                "applicationTheme": "dark",
+                "useMica": false
+            }
+        },
+        {
+            "name": "legacyLight",
+            "tab": 
+            {
+                "background": null,
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "window": 
+            {
+                "applicationTheme": "light",
+                "useMica": false
+            }
+        },
+        {
+            "name": "legacySystem",
+            "tab": 
+            {
+                "background": null,
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "window": 
+            {
+                "applicationTheme": "system",
+                "useMica": false
+            }
+        }
+    ]
 }
